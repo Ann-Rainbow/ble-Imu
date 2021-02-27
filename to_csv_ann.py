@@ -17,7 +17,7 @@ for i in range(0, 16):
     with open(f'all_probes/{i}_probe/gyrox_data.txt', 'r') as f:
         gz = [float(x) for x in f.read().split('\n')[:-1]]
 
-for i in range(0, 16):
+for i in range(0, 17):
     csvfile = open(f'all_probes/{i}_probe/{i}_probe.csv', 'w', newline='')
     spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
     spamwriter.writerow(['ax', 'ay', 'az', 'gx', 'gy', 'gz'])
