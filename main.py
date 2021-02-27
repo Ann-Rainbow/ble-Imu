@@ -262,7 +262,6 @@ gyroz_characteristic = "0c1697bd-dc8e-4620-9a4e-9642012311d8"
 accelz_characteristic = "b65eff6d-ff7f-45d6-b1b5-6c8b0e2f1770"
 
 if __name__ == "__main__":
-
     number_of_probe = input('Please, input number_of_probe: ')
     Path(f"all_probes\{number_of_probe}_probe").mkdir(parents=True, exist_ok=True)
     # Create the event loop.
