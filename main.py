@@ -262,8 +262,20 @@ gyroz_characteristic = "0c1697bd-dc8e-4620-9a4e-9642012311d8"
 accelz_characteristic = "b65eff6d-ff7f-45d6-b1b5-6c8b0e2f1770"
 
 if __name__ == "__main__":
-    number_of_probe = input('Please, input number_of_probe: ')
+    number_of_probe = input('Please, enter the number_of_probe: ')
+    #success = input('Please, enter 1 if this probe is success, 0 else ') # запись номера классификатора, работает
     Path(f"all_probes\{number_of_probe}_probe").mkdir(parents=True, exist_ok=True)
+    #with open(f"all_probes\{number_of_probe}_probe/Result", 'w') as f: # запись номера классификатора, работает
+        #f.write(success) # запись номера классификатора, работает
+
+
+    # false_or_true_exercise = input("Please, enter false_or_true_exercise: ")
+    # false_or_true_exercise = int (false_or_true_exercise)
+    # if false_or_true_exercise == 1:
+    #     open (f'all_probes/{i}_probe/1.txt')
+    # else false_or_true_exercise = 0:
+    #     false_or_true_exercise = open(f'all_probes/{i}_probe/0.txt')
+
     # Create the event loop.
     loop = asyncio.get_event_loop()
 
