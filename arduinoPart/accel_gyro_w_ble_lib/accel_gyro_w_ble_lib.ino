@@ -64,6 +64,7 @@ GKalman gyroYFilter(40, 40, 0.5);
 GKalman gyroZFilter(40, 40, 0.5);
 /* Common global buffer will be used to write to the BLE characteristics. */
 char bleBuffer[BLE_BUFFER_SIZES];
+//int led = 13; // написала
 
 /*****************************************************************************/
 /*SETUP (Initialisation)                                                     */
@@ -75,6 +76,7 @@ void setup()
      * plotter 
      */
     Serial.begin(115200);
+    //pinMode(led, OUTPUT); //написала
     while(!Serial);
 
 
@@ -117,6 +119,11 @@ void setup()
 /*****************************************************************************/
 void loop()
 {
+    //digitalWrite(led, HIGH); // написала
+    //delay(1000); //написала
+    //digitalWrite(led, LOW); // написала
+    //delay(1000); //написала
+    
     BLEDevice central = BLE.central();
     if(central)
     {
