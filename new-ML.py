@@ -10,7 +10,7 @@ dataset = np.genfromtxt('all_probes/dataset.csv',delimiter=',')
 print(dataset)
 X = dataset[:, :-1]
 Y = np.array(list(map(int, dataset[:, -1])))
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=2020)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.08, random_state=5)
 # X_train = X[:-1]
 # Y_train = Y[:-1]
 # X_test = [X[-1]]

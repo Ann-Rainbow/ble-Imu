@@ -34,7 +34,7 @@ def median_filter (x, k):
 # probe1_folder = Path(r"C:\Users\Acer A315\Desktop\EDUCATION\1. Diploma\1. Sketches\_Server_\4. ArduinoPythonSrv-master - Modified\1_probe")
 vectors = []
 
-for i in range(0, 120):
+for i in range(0, 121):
     with open(f'all_probes/{i}_probe/accelx_data.txt', 'r') as f:
         ax = np.array([float(x) for x in f.read().split('\n')[:-1]])
     with open(f'all_probes/{i}_probe/accely_data.txt', 'r') as f:
@@ -84,13 +84,13 @@ for i in range(0, 120):
         vector.append(yg)
         vector.append(zg)
 
-    print(vector)
+    #print(vector)
 
 
-    print(len(vector))
+    #print(len(vector))
     vectors.append(vector)
 
-print(vectors)
+#print(vectors)
 
 csvfile = open(f'all_probes/dataset.csv', 'w', newline='\n')
 spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)

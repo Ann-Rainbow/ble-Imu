@@ -10,10 +10,11 @@ from aioconsole import ainput
 from bleak import BleakClient, discover
 
 from pathlib import Path
+from ml_module import getPrediction
 
 OurArduino33Ble = "MySensorForTests"
 number_of_probe = "0"
-
+#getPrediction("file")
 class Connection:
     client: BleakClient = None
 
