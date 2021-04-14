@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '1.ui'
+# Form implementation generated from reading ui file '1.home_page_RU.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(860, 992)
+        Form.resize(860, 1054)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(79, 1, 158))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -156,7 +156,7 @@ class Ui_Form(object):
         self.verticalLayout.setObjectName("verticalLayout")
         self.label = QtWidgets.QLabel(Form)
         font = QtGui.QFont()
-        font.setPointSize(35)
+        font.setPointSize(33)
         font.setBold(True)
         font.setWeight(75)
         self.label.setFont(font)
@@ -186,7 +186,7 @@ class Ui_Form(object):
         self.label_3.setMinimumSize(QtCore.QSize(200, 200))
         self.label_3.setMaximumSize(QtCore.QSize(200, 225))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Наклон вперед 4.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Наклон вперед 4.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_2.addWidget(self.label_3)
@@ -202,7 +202,7 @@ class Ui_Form(object):
         self.label_6.setMinimumSize(QtCore.QSize(200, 200))
         self.label_6.setMaximumSize(QtCore.QSize(200, 200))
         self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/За компьютером 2.png"))
+        self.label_6.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/За компьютером 2.png"))
         self.label_6.setScaledContents(True)
         self.label_6.setObjectName("label_6")
         self.horizontalLayout_3.addWidget(self.label_6)
@@ -238,7 +238,7 @@ class Ui_Form(object):
         self.label_7.setMinimumSize(QtCore.QSize(200, 200))
         self.label_7.setMaximumSize(QtCore.QSize(200, 200))
         self.label_7.setText("")
-        self.label_7.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Приседание 2.png"))
+        self.label_7.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Приседание 2.png"))
         self.label_7.setScaledContents(True)
         self.label_7.setObjectName("label_7")
         self.horizontalLayout_5.addWidget(self.label_7)
@@ -255,9 +255,11 @@ class Ui_Form(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_5 = QtWidgets.QLabel(Form)
+        self.label_5.setEnabled(True)
         font = QtGui.QFont()
         font.setPointSize(15)
         self.label_5.setFont(font)
+        self.label_5.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_5.setObjectName("label_5")
         self.horizontalLayout.addWidget(self.label_5)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
@@ -561,23 +563,24 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", " ")) # deleted ("Form", "Form")
-        self.label.setText(_translate("Form", "Welcome to the \"***\" app"))
-        self.label_4.setText(_translate("Form", "- Train anywhere \n"
-"you want"))
-        self.label_2.setText(_translate("Form", "- Train whenever \n"
-"you want"))
-        self.label_8.setText(_translate("Form", "- Train anything \n"
-"you want"))
-        self.label_5.setText(_translate("Form", "   The system allows you to train \n"
-"without a trainer.\n"
-"\n"
-"   Small sensors, Inertial Measurement \n"
-"Units, track your movements and the \n"
-"app shows how you can correct your \n"
-"exercises."))
-        self.pushButton.setText(_translate("Form", "Sign up"))
-        self.pushButton_2.setText(_translate("Form", "Register"))
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label.setText(_translate("Form", "Добро пожаловать \n"
+"в приложение \"КорЭкс\""))
+        self.label_4.setText(_translate("Form", "- Тренируйся, \n"
+"где хочешь"))
+        self.label_2.setText(_translate("Form", "- Тренируйся, \n"
+"когда хочешь"))
+        self.label_8.setText(_translate("Form", "- Тренируй, \n"
+"что хочешь"))
+        self.label_5.setText(_translate("Form", "   Система позволяет тренироваться \n"
+"без тренера.\n"
+"   Маленькие датчики, инерциальные \n"
+"измерительные модули, отслеживают \n"
+"ваши движения, и приложение \n"
+"показывает как вы можете \n"
+"скорректировать ваши упражнения."))
+        self.pushButton.setText(_translate("Form", "Выбрать упражнение"))
+        self.pushButton_2.setText(_translate("Form", "Переключиться на Английский"))
 
 
 if __name__ == "__main__":

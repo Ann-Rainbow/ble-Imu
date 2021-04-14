@@ -111,7 +111,7 @@ void setup()
 
         /* Plots the legend on Serial Plotter */
         Serial.println("X, Y, Z");
-        Serial.println("GOTOVA");
+        //Serial.println("GOTOVA");
     }
 }
 
@@ -169,7 +169,7 @@ void loop()
             }
         }
     } else {
-      Serial.println("Central ne robit(");
+      Serial.println("Central is not connected");
     }
     
 }

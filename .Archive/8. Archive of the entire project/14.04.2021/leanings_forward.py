@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '1.ui'
+# Form implementation generated from reading ui file '3.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(860, 992)
+        Form.resize(860, 990)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(79, 1, 158))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -170,18 +170,6 @@ class Ui_Form(object):
         self.verticalLayout.addWidget(self.line_4)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.label_4 = QtWidgets.QLabel(Form)
-        self.label_4.setMinimumSize(QtCore.QSize(300, 0))
-        self.label_4.setMaximumSize(QtCore.QSize(300, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(18)
-        self.label_4.setFont(font)
-        self.label_4.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_4.setObjectName("label_4")
-        self.horizontalLayout_2.addWidget(self.label_4)
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem)
         self.label_3 = QtWidgets.QLabel(Form)
         self.label_3.setMinimumSize(QtCore.QSize(200, 200))
         self.label_3.setMaximumSize(QtCore.QSize(200, 225))
@@ -201,13 +189,15 @@ class Ui_Form(object):
         self.label_6 = QtWidgets.QLabel(Form)
         self.label_6.setMinimumSize(QtCore.QSize(200, 200))
         self.label_6.setMaximumSize(QtCore.QSize(200, 200))
-        self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/За компьютером 2.png"))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.label_6.setFont(font)
         self.label_6.setScaledContents(True)
+        self.label_6.setAlignment(QtCore.Qt.AlignCenter)
         self.label_6.setObjectName("label_6")
         self.horizontalLayout_3.addWidget(self.label_6)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem1)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem)
         self.label_2 = QtWidgets.QLabel(Form)
         self.label_2.setMinimumSize(QtCore.QSize(300, 0))
         font = QtGui.QFont()
@@ -232,38 +222,46 @@ class Ui_Form(object):
         self.label_8.setAlignment(QtCore.Qt.AlignCenter)
         self.label_8.setObjectName("label_8")
         self.horizontalLayout_5.addWidget(self.label_8)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_5.addItem(spacerItem2)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem1)
         self.label_7 = QtWidgets.QLabel(Form)
         self.label_7.setMinimumSize(QtCore.QSize(200, 200))
         self.label_7.setMaximumSize(QtCore.QSize(200, 200))
-        self.label_7.setText("")
-        self.label_7.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Приседание 2.png"))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.label_7.setFont(font)
         self.label_7.setScaledContents(True)
+        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
         self.label_7.setObjectName("label_7")
         self.horizontalLayout_5.addWidget(self.label_7)
         self.verticalLayout.addLayout(self.horizontalLayout_5)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem3)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem4)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem2)
         self.line_3 = QtWidgets.QFrame(Form)
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
         self.verticalLayout.addWidget(self.line_3)
+        self.result = QtWidgets.QLabel(Form)
+        self.result.setMinimumSize(QtCore.QSize(0, 50))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.result.setFont(font)
+        self.result.setText("")
+        self.result.setAlignment(QtCore.Qt.AlignCenter)
+        self.result.setObjectName("result")
+        self.verticalLayout.addWidget(self.result)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem3)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label_5 = QtWidgets.QLabel(Form)
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.label_5.setFont(font)
-        self.label_5.setObjectName("label_5")
-        self.horizontalLayout.addWidget(self.label_5)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem4)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.pushButton = QtWidgets.QPushButton(Form)
         self.pushButton.setEnabled(True)
+        self.pushButton.setMinimumSize(QtCore.QSize(300, 0))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -554,6 +552,8 @@ class Ui_Form(object):
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout_2.addWidget(self.pushButton_2)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem5)
         self.verticalLayout.addLayout(self.horizontalLayout)
 
         self.retranslateUi(Form)
@@ -561,23 +561,19 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", " ")) # deleted ("Form", "Form")
-        self.label.setText(_translate("Form", "Welcome to the \"***\" app"))
-        self.label_4.setText(_translate("Form", "- Train anywhere \n"
-"you want"))
-        self.label_2.setText(_translate("Form", "- Train whenever \n"
-"you want"))
-        self.label_8.setText(_translate("Form", "- Train anything \n"
-"you want"))
-        self.label_5.setText(_translate("Form", "   The system allows you to train \n"
-"without a trainer.\n"
-"\n"
-"   Small sensors, Inertial Measurement \n"
-"Units, track your movements and the \n"
-"app shows how you can correct your \n"
-"exercises."))
-        self.pushButton.setText(_translate("Form", "Sign up"))
-        self.pushButton_2.setText(_translate("Form", "Register"))
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label.setText(_translate("Form", "Leanings \n"
+"forward"))
+        self.label_6.setText(_translate("Form", "- Exercise \n"
+"description:"))
+        self.label_2.setText(_translate("Form", "raise and \n"
+"lower the body \n"
+"to the legs."))
+        self.label_8.setText(_translate("Form", "- Exercise correction:"))
+        self.label_7.setText(_translate("Form", "keep your \n"
+"back straight."))
+        self.pushButton.setText(_translate("Form", "Start"))
+        self.pushButton_2.setText(_translate("Form", "Back"))
 
 
 if __name__ == "__main__":

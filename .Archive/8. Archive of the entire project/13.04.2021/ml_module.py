@@ -12,15 +12,13 @@ from sklearn.linear_model import LogisticRegression
 # from sklearn.tree import DecisionTreeClassifier
 # from sklearn.svm import SVC
 def modelTraining():
-    rawData = open(f'all_probes/dataset.csv')  # тренировочные данные
+    rawData = open(f'all_probes/dataset4.csv')  # тренировочные данные
     svmClass = SVC()
     dataset = np.genfromtxt(rawData, delimiter=",")
     svmClass.fit(dataset[:, :-1], dataset[:, -1])  # обучение классификатора
-    clsfile = open("all_probes/classifier_SVC", "wb")
+    clsfile = open("all_probes/classifier", "wb")
     pickle.dump(svmClass, clsfile)
     clsfile.close()
-
-# modelTraining()
 
 def getPrediction(testData):
     # print(dataset)

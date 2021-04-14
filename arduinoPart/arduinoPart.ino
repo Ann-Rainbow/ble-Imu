@@ -111,7 +111,7 @@ void loop()
   delay(100);
 }
 
-char getAccelerometer()
+char getGyroscope()
 {
   Serial.print("In getAcceleration: return is - ");
   float x, y, z, delta = 0.05;
