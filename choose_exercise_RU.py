@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_CorEx(object):
     def setupUi(self, CorEx):
         CorEx.setObjectName("CorEx")
-        CorEx.resize(860, 991)
+        CorEx.resize(860, 1024)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(79, 1, 158))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -186,7 +186,7 @@ class Ui_CorEx(object):
         self.pushButton_5.setMinimumSize(QtCore.QSize(200, 200))
         self.pushButton_5.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Подьем рук вверх - обрезанное.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Подьем рук вверх - обрезанное.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_5.setIcon(icon)
         self.pushButton_5.setIconSize(QtCore.QSize(200, 200))
         self.pushButton_5.setFlat(True)
@@ -204,7 +204,7 @@ class Ui_CorEx(object):
         self.pushButton_4.setMinimumSize(QtCore.QSize(200, 200))
         self.pushButton_4.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../5. Картинки, рисунки/За компьютером 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/За компьютером 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_4.setIcon(icon1)
         self.pushButton_4.setIconSize(QtCore.QSize(200, 200))
         self.pushButton_4.setFlat(True)
@@ -242,7 +242,7 @@ class Ui_CorEx(object):
         self.pushButton_3.setMinimumSize(QtCore.QSize(200, 200))
         self.pushButton_3.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Приседание 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Приседание 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_3.setIcon(icon2)
         self.pushButton_3.setIconSize(QtCore.QSize(200, 200))
         self.pushButton_3.setFlat(True)
@@ -251,13 +251,13 @@ class Ui_CorEx(object):
         self.verticalLayout.addLayout(self.horizontalLayout_5)
         spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem3)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem4)
         self.line_3 = QtWidgets.QFrame(CorEx)
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
         self.verticalLayout.addWidget(self.line_3)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem4)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_5 = QtWidgets.QLabel(CorEx)
@@ -416,26 +416,35 @@ class Ui_CorEx(object):
         self.verticalLayout_2.addWidget(self.pushButton)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
         self.verticalLayout.addLayout(self.horizontalLayout)
+        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem5)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem6)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem7)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem8)
 
         self.retranslateUi(CorEx)
         QtCore.QMetaObject.connectSlotsByName(CorEx)
 
     def retranslateUi(self, CorEx):
         _translate = QtCore.QCoreApplication.translate
-        CorEx.setWindowTitle(_translate("CorEx", "Form"))
-        self.label.setText(_translate("CorEx", "Добро пожаловать \n"
-"в приложение \"КорЭкс\""))
+        CorEx.setWindowTitle(_translate("CorEx", "КорЭкс")) # вместо "Form" - "КорЭкс"
+        self.label.setText(_translate("CorEx", "Выберите упражнение"))
         self.label_4.setText(_translate("CorEx", "- Подъёмы рук \n"
 "вперёд"))
         self.label_2.setText(_translate("CorEx", "- Подъёмы рук \n"
 "в стороны"))
         self.label_8.setText(_translate("CorEx", "- Приседания"))
-        self.label_5.setText(_translate("CorEx", "Нажмите на упражнение, которое \n"
-"вы хотите тренировать. Маленькие датчики, \n"
-"инерциальные измерительные модули, \n"
-"уведомят вас о правильности выполняемого \n"
-"упражнения. Эта обратная связь поможет \n"
-"исправить упражнения."))
+        self.label_5.setText(_translate("CorEx", "   Нажмите на упражнение, которое \n"
+"вы хотите тренировать. \n"
+"\n"
+"   Маленькие датчики, инерциальные \n"
+"измерительные модули, уведомят вас о \n"
+"правильности выполняемого упражнения. \n"
+"Эта обратная связь поможет исправить \n"
+"упражнения."))
         self.pushButton.setText(_translate("CorEx", "Назад"))
 
 

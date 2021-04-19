@@ -11,9 +11,9 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
+class Ui_CorEx(object):
+    def setupUi(self, CorEx):
+        Form.setObjectName("CorEx")
         Form.resize(860, 990)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(79, 1, 158))
@@ -174,7 +174,7 @@ class Ui_Form(object):
         self.label_3.setMinimumSize(QtCore.QSize(200, 200))
         self.label_3.setMaximumSize(QtCore.QSize(200, 225))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/За компьютером 2.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/За компьютером 2.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_2.addWidget(self.label_3)
@@ -561,7 +561,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("CorEx", "КорЭкс")) # изменила для заголовка окна, плюс изменила параметр функции выше.
         self.label.setText(_translate("Form", "Подъёмы рук \n"
 "в стороны"))
         self.label_6.setText(_translate("Form", "- Описание \n"
@@ -582,7 +582,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_CorEx()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

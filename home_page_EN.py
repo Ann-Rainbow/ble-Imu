@@ -186,7 +186,7 @@ class Ui_CorEx(object):
         self.label_3.setMinimumSize(QtCore.QSize(200, 200))
         self.label_3.setMaximumSize(QtCore.QSize(200, 225))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Наклон вперед 4.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Наклон вперед 4.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_2.addWidget(self.label_3)
@@ -202,7 +202,7 @@ class Ui_CorEx(object):
         self.label_6.setMinimumSize(QtCore.QSize(200, 200))
         self.label_6.setMaximumSize(QtCore.QSize(200, 200))
         self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/За компьютером 2.png"))
+        self.label_6.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/За компьютером 2.png"))
         self.label_6.setScaledContents(True)
         self.label_6.setObjectName("label_6")
         self.horizontalLayout_3.addWidget(self.label_6)
@@ -238,7 +238,7 @@ class Ui_CorEx(object):
         self.label_7.setMinimumSize(QtCore.QSize(200, 200))
         self.label_7.setMaximumSize(QtCore.QSize(200, 200))
         self.label_7.setText("")
-        self.label_7.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Приседание 2.png"))
+        self.label_7.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Приседание 2.png"))
         self.label_7.setScaledContents(True)
         self.label_7.setObjectName("label_7")
         self.horizontalLayout_5.addWidget(self.label_7)
@@ -561,7 +561,7 @@ class Ui_CorEx(object):
 
     def retranslateUi(self, CorEx):
         _translate = QtCore.QCoreApplication.translate
-        CorEx.setWindowTitle(_translate("CorEx", "Form"))
+        CorEx.setWindowTitle(_translate("CorEx", "CorEx")) # removed "    , "Form"     " - тут убирать "Form", заменять на "CorEx", название окна поменяется
         self.label.setText(_translate("CorEx", "Welcome to the \"CorEx\" app"))
         self.label_4.setText(_translate("CorEx", "- Train anywhere \n"
 "you want"))

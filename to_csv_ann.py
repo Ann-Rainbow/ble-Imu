@@ -20,6 +20,43 @@ def median_filter(x, k):
     return np.median (y, axis=1)
 
 
+def collect_csv_data_dir(directory):
+    # global ax, ay, az, gx, gy, gz
+    with open(f'{directory}/accelx_data.txt', 'r') as f:
+        # print(f.read())
+        ax = np.array([float(x) for x in f.read().split('\n')[:-1]])
+    # print(ax)
+    with open(f'{directory}/accely_data.txt', 'r') as f:
+        ay = np.array([float(x) for x in f.read().split('\n')[:-1]])
+    with open(f'{directory}/accelz_data.txt', 'r') as f:
+        az = np.array([float(x) for x in f.read().split('\n')[:-1]])
+    with open(f'{directory}/gyrox_data.txt', 'r') as f:
+        gx = np.array([float(x) for x in f.read().split('\n')[:-1]])
+    with open(f'{directory}/gyrox_data.txt', 'r') as f:
+        gy = np.array([float(x) for x in f.read().split('\n')[:-1]])
+    with open(f'{directory}/gyrox_data.txt', 'r') as f:
+        gz = np.array([float(x) for x in f.read().split('\n')[:-1]])
+
+    ax = median_filter(ax, 5)
+    ay = median_filter(ay, 5)
+    az = median_filter(az, 5)
+
+    gx = median_filter(gx, 5)
+    gy = median_filter(gy, 5)
+    gz = median_filter(gz, 5)
+
+    vector = []
+    for xa, ya, za, xg, yg, zg in zip(ax, ay, az, gx, gy, gz):
+        vector.append(xa)
+        vector.append(ya)
+        vector.append(za)
+        vector.append(xg)
+        vector.append(yg)
+        vector.append(zg)
+
+    return vector
+
+
 def collect_csv_data(i):
     # global ax, ay, az, gx, gy, gz
     with open(f'all_probes/{i}_probe/accelx_data.txt', 'r') as f:

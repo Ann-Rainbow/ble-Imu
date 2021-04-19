@@ -174,7 +174,7 @@ class Ui_Form(object):
         self.label_3.setMinimumSize(QtCore.QSize(200, 200))
         self.label_3.setMaximumSize(QtCore.QSize(200, 225))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Подьем рук вверх - обрезанное.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Подьем рук вверх - обрезанное.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_2.addWidget(self.label_3)
@@ -561,7 +561,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "CorEx"))
         self.label.setText(_translate("Form", "Arm raisings \n"
 "forward"))
         self.label_6.setText(_translate("Form", "- Exercise \n"
@@ -570,7 +570,8 @@ class Ui_Form(object):
 "raise through the front \n"
 "to the head and \n"
 "lower it to the leg"))
-        self.label_8.setText(_translate("Form", "- Exercise correction:"))
+        self.label_8.setText(_translate("Form", "- Exercise \n"
+"correction:"))
         self.label_7.setText(_translate("Form", "keep the arm \n"
 "straight."))
         self.pushButton.setText(_translate("Form", "Start"))

@@ -22,11 +22,11 @@ def modelTraining():
 
 # modelTraining()
 
-def getPrediction(testData):
+def getPrediction(model_path, testData):
     # print(dataset)
     # dataset = np.loadcsv(rawData, delimiter=",")
-    clsfile = open("all_probes/classifier", "rb")
-    svmClass = pickle.load(clsfile)
+    clsfile = open(model_path, "rb")
+    classifier = pickle.load(clsfile)
     clsfile.close()
     # testData = open(f'all_probes/{testFileName}')  # тестовые данные
     # testSet = np.genfromtxt(testData, delimiter=",")
@@ -34,8 +34,8 @@ def getPrediction(testData):
     print(testSet.shape)
     testSet = np.reshape(testSet, (1, -1))
     # print(testSet)
-    svmPredict = svmClass.predict(testSet)  # вызов метода predict
-    #print(svmPredict)
+    svmPredict = classifier.predict(testSet)  # вызов метода predict
+    print(svmPredict)
     return bool(svmPredict)
 
 

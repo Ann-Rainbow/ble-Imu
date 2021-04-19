@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '2.choose_exercise_EN.ui'
+# Form implementation generated from reading ui file '2.choose_exercise_EN2.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -186,7 +186,7 @@ class Ui_Form(object):
         self.pushButton_5.setMinimumSize(QtCore.QSize(200, 200))
         self.pushButton_5.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Подьем рук вверх - обрезанное.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Подьем рук вверх - обрезанное.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_5.setIcon(icon)
         self.pushButton_5.setIconSize(QtCore.QSize(200, 200))
         self.pushButton_5.setFlat(True)
@@ -204,7 +204,7 @@ class Ui_Form(object):
         self.pushButton_4.setMinimumSize(QtCore.QSize(200, 200))
         self.pushButton_4.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../5. Картинки, рисунки/За компьютером 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/За компьютером 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_4.setIcon(icon1)
         self.pushButton_4.setIconSize(QtCore.QSize(200, 200))
         self.pushButton_4.setFlat(True)
@@ -242,7 +242,7 @@ class Ui_Form(object):
         self.pushButton_3.setMinimumSize(QtCore.QSize(200, 200))
         self.pushButton_3.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../5. Картинки, рисунки/Приседание 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("../../../5. Картинки, рисунки/Приседание 2.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_3.setIcon(icon2)
         self.pushButton_3.setIconSize(QtCore.QSize(200, 200))
         self.pushButton_3.setFlat(True)
@@ -251,13 +251,13 @@ class Ui_Form(object):
         self.verticalLayout.addLayout(self.horizontalLayout_5)
         spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem3)
-        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem4)
         self.line_3 = QtWidgets.QFrame(Form)
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
         self.verticalLayout.addWidget(self.line_3)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem4)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.label_5 = QtWidgets.QLabel(Form)
@@ -422,15 +422,16 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
-        self.label.setText(_translate("Form", "Welcome to the \"CorEx\" app"))
+        Form.setWindowTitle(_translate("Form", "CorEx")) # вместо "Form" - "CorEx"
+        self.label.setText(_translate("Form", "Choose the exercise"))
         self.label_4.setText(_translate("Form", "- Arm raisings \n"
 "forward"))
         self.label_2.setText(_translate("Form", "- Arm raisings \n"
 "to the sides"))
         self.label_8.setText(_translate("Form", "- Squats"))
-        self.label_5.setText(_translate("Form", "Tap on the exersice you want to train.\n"
-"Small sensors, Inertial Measurement \n"
+        self.label_5.setText(_translate("Form", "   Tap on the exersice you want to train.\n"
+"\n"
+"   Small sensors, Inertial Measurement \n"
 "Units, will notify you about correctness \n"
 "of the performing exercise. This feedback \n"
 "will help to correct exercises."))
