@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '1.home_page_EN.ui'
+# Form implementation generated from reading ui file '1.home_page_RU3.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_CorEx(object):
     def setupUi(self, CorEx):
         CorEx.setObjectName("CorEx")
-        CorEx.resize(860, 992)
+        CorEx.resize(861, 992)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(79, 1, 158))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -561,24 +561,23 @@ class Ui_CorEx(object):
 
     def retranslateUi(self, CorEx):
         _translate = QtCore.QCoreApplication.translate
-        CorEx.setWindowTitle(_translate("CorEx", "CorEx")) # removed "    , "Form"     " - тут убирать "Form", заменять на "CorEx", название окна поменяется
-        #print(_translate("CorEx", "Welcome to the \"CorEx\" app"))
-        self.label.setText(_translate("CorEx", "Welcome to the \"CorEx\" app"))
-        self.label_4.setText(_translate("CorEx", "- Train anywhere \n"
-"you want"))
-        self.label_2.setText(_translate("CorEx", "- Train whenever \n"
-"you want"))
-        self.label_8.setText(_translate("CorEx", "- Train anything \n"
-"you want"))
-        self.label_5.setText(_translate("CorEx", "   The system allows you to train \n"
-"without a trainer.\n"
-"\n"
-"   Small sensors, Inertial Measurement \n"
-"Units, track your movements and the \n"
-"app shows how you can correct your \n"
-"exercises."))
-        self.pushButton.setText(_translate("CorEx", "Choose the exercise"))
-        self.pushButton_2.setText(_translate("CorEx", "Switch to Russian"))
+        CorEx.setWindowTitle(_translate("CorEx", "КорЭкс"))
+        self.label.setText(_translate("CorEx", "Добро пожаловать \n"
+"в приложение \"КорЭкс\""))
+        self.label_4.setText(_translate("CorEx", "- Тренируйся, \n"
+"где хочешь"))
+        self.label_2.setText(_translate("CorEx", "- Тренируйся, \n"
+"когда хочешь"))
+        self.label_8.setText(_translate("CorEx", "- Тренируй, \n"
+"что хочешь"))
+        self.label_5.setText(_translate("CorEx", "   Система позволяет тренироваться без \n"
+"тренера. Маленькие датчики, \n"
+"инерциальные измерительные модули, \n"
+"отслеживают ваши движения, и \n"
+"приложение показывает как вы можете \n"
+"скорректировать ваши упражнения."))
+        self.pushButton.setText(_translate("CorEx", "Выбрать упражнение"))
+        self.pushButton_2.setText(_translate("CorEx", "Переключиться на Английский"))
 
 
 if __name__ == "__main__":

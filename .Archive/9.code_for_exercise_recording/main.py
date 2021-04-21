@@ -16,7 +16,7 @@ from pathlib import Path
 # from attempt_vectors import
 
 
-from ml_module import getPrediction   # машинное обучение
+# from ml_module import getPrediction   # машинное обучение
 
 OurArduino33Ble = "MySensorForTests"
 number_of_probe = "0"
@@ -174,7 +174,7 @@ class Connection:
         #if len(self.rx_data) >= self.dump_size:
         self.data_dump_handler("AX " + str(self.rx_timestamps[-1].time()) + " " + data.decode("utf-8"))
         # print(data.decode("utf-8") + "\n")
-        with open(f"all_probes/{number_of_probe}_probe/accelx_data.txt", "a") as f: # вставлено
+        with open(f"all_probes2/{number_of_probe}_probe/accelx_data.txt", "a") as f: # вставлено
             f.write(data.decode("utf-8") + "\n") # вставлено
         self.clear_lists()
 
@@ -187,7 +187,7 @@ class Connection:
         #if len(self.rx_data) >= self.dump_size:
         self.data_dump_handler("GX " + str(self.rx_timestamps[-1].time()) + " " + data.decode("utf-8"))
         # print(data.decode("utf-8") + "\n")
-        with open(f"all_probes/{number_of_probe}_probe/gyrox_data.txt", "a") as f: # вставлено
+        with open(f"all_probes2/{number_of_probe}_probe/gyrox_data.txt", "a") as f: # вставлено
             f.write(data.decode("utf-8") + "\n") # вставлено
         self.clear_lists()
     def accelY_notification_handler(self, sender: str, data: Any):
@@ -199,7 +199,7 @@ class Connection:
         #if len(self.rx_data) >= self.dump_size:
         self.data_dump_handler("AY " + str(self.rx_timestamps[-1].time()) + " " + data.decode("utf-8"))
         # print(data.decode("utf-8") + "\n")
-        with open(f"all_probes/{number_of_probe}_probe/accely_data.txt", "a") as f: # вставлено
+        with open(f"all_probes2/{number_of_probe}_probe/accely_data.txt", "a") as f: # вставлено
             f.write(data.decode("utf-8") + "\n") # вставлено
         self.clear_lists()
 
@@ -212,7 +212,7 @@ class Connection:
         #if len(self.rx_data) >= self.dump_size:
         self.data_dump_handler("GY " + str(self.rx_timestamps[-1].time()) + " " + data.decode("utf-8"))
         # print(data.decode("utf-8") + "\n")
-        with open(f"all_probes/{number_of_probe}_probe/gyroy_data.txt", "a") as f: # вставлено
+        with open(f"all_probes2/{number_of_probe}_probe/gyroy_data.txt", "a") as f: # вставлено
             f.write(data.decode("utf-8") + "\n") # вставлено
         self.clear_lists()
     def accelZ_notification_handler(self, sender: str, data: Any):
@@ -224,7 +224,7 @@ class Connection:
         #if len(self.rx_data) >= self.dump_size:
         self.data_dump_handler("AZ " + str(self.rx_timestamps[-1].time()) + " " + data.decode("utf-8"))
         # print(data.decode("utf-8") + "\n")
-        with open(f"all_probes/{number_of_probe}_probe/accelz_data.txt", "a") as f: # вставлено
+        with open(f"all_probes2/{number_of_probe}_probe/accelz_data.txt", "a") as f: # вставлено
             f.write(data.decode("utf-8") + "\n") # вставлено
         self.clear_lists()
 
@@ -237,7 +237,7 @@ class Connection:
         #if len(self.rx_data) >= self.dump_size:
         self.data_dump_handler("GZ " + str(self.rx_timestamps[-1].time()) + " " + data.decode("utf-8"))
         # print(data.decode("utf-8") + "\n")
-        with open(f"all_probes/{number_of_probe}_probe/gyroz_data.txt", "a") as f: # вставлено
+        with open(f"all_probes2/{number_of_probe}_probe/gyroz_data.txt", "a") as f: # вставлено
             f.write(data.decode("utf-8") + "\n") # вставлено
         self.clear_lists()
 
@@ -261,7 +261,7 @@ async def main():
 #############
 # read_characteristic = "00001143-0000-1000-8000-00805f9b34fb"
 write_characteristic = "00001142-0000-1000-8000-00805f9b34fb"
-gyrox_characteristic = "c31e303f-9a10-4fdc-a13c-bdf94e9381f0" # изменила характеристику "3b18a65e-26c7-4c83-b8e2-bd11c06650ee", текущий скетч ардуино
+gyrox_characteristic = "3b18a65e-26c7-4c83-b8e2-bd11c06650ee"
 accelx_characteristic = "84b8e0b2-9778-42de-89ea-0b44bb363c34"
 gyroy_characteristic = "1dd4e426-0296-4535-8b20-fac505767d39"
 accely_characteristic = "db8b6744-e800-40d3-8aec-e6b13ba851e8"
@@ -271,7 +271,7 @@ accelz_characteristic = "b65eff6d-ff7f-45d6-b1b5-6c8b0e2f1770"
 if __name__ == "__main__":
     number_of_probe = input('Please, enter the number_of_probe: ')
     #success = input('Please, enter 1 if this probe is success, 0 else: ') # запись номера классификатора, работает
-    Path(f"all_probes\{number_of_probe}_probe").mkdir(parents=True, exist_ok=True)
+    Path(f"all_probes2\{number_of_probe}_probe").mkdir(parents=True, exist_ok=True)
     #with open(f"all_probes\{number_of_probe}_probe/Result", 'w') as f: # запись номера классификатора, работает
         #f.write(success) # запись номера классификатора, работает
 
