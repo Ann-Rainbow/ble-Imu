@@ -5,19 +5,27 @@ import numpy as np
 import pickle
 from pathlib import Path
 from sklearn.linear_model import LogisticRegression
+from sklearn.linear_model import LinearRegression
 #  Другие методы МL, еще больше - в библиотеке.
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
-# from sklearn.svm import SVC
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
+
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.cluster import KMeans
+from sklearn.cluster import DBSCAN
 def modelTraining():
-    rawData = open(f'all_probes/dataset.csv')  # тренировочные данные
-    LogisticRegressionClass = LogisticRegression()
+    rawData = open(f'all_probes/dataset-arm_raisings_forward.csv')  # тренировочные данные
+    Class = RandomForestClassifier(n_estimators=98)
+        #KNeighborsClassifier(n_neighbors=4)
     dataset = np.genfromtxt(rawData, delimiter=",")
-    LogisticRegressionClass.fit(dataset[:, :-1], dataset[:, -1])  # обучение классификатора
-    clsfile = open("all_probes/classifier_LogisticRegression", "wb")
-    pickle.dump(LogisticRegressionClass, clsfile)
+    Class.fit(dataset[:, :-1], dataset[:, -1])  # обучение классификатора
+    clsfile = open("all_probes/arf-classifier_RandomForest-98", "wb")
+    pickle.dump(Class, clsfile)
     clsfile.close()
 
 modelTraining()
