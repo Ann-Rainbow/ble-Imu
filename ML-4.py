@@ -19,13 +19,14 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.cluster import KMeans
 from sklearn.cluster import DBSCAN
 def modelTraining():
-    rawData = open(f'all_probes/dataset-arm_raisings_forward.csv')  # тренировочные данные; artts-different_speed.csv
-    #Class = RandomForestClassifier(n_estimators=17, criterion="gini", max_depth=100)
-    Class = SVC(kernel = 'rbf', C = 10)
-        #KNeighborsClassifier(n_neighbors=4)
+    rawData = open(f'all_probes/artts-a_little_complemented.csv')  # тренировочные данные; artts-different_speed.csv
+    Class = RandomForestClassifier(n_estimators=7, criterion="gini", max_depth=100) # the best parameters!!!)
+    #Class = SVC(kernel = 'rbf', C = 10)
+    #KNeighborsClassifier(n_neighbors=4)
+
     dataset = np.genfromtxt(rawData, delimiter=",")
     Class.fit(dataset[:, :-1], dataset[:, -1])  # обучение классификатора
-    clsfile = open("all_probes/arf-SVC-best_parameters", "wb")
+    clsfile = open("all_probes/artts-a_little_complemented-n_estimators=7_80-percentages", "wb")
     pickle.dump(Class, clsfile)
     clsfile.close()
 

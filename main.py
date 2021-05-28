@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QDialog, QDialogButtonBox
 from choose_exercise_EN import Ui_CorEx as choose_exercise_ui
 from home_page_EN import Ui_CorEx as main_window_widget_ui
-from leanings_forward import  Ui_Form as leanings_forward_ui
+#from leanings_forward import  Ui_Form as leanings_forward_ui
 from arm_raisings_to_the_sides_EN import Ui_Form as arm_raisings_to_the_sides_ui
 from arm_raisings_forward_EN import Ui_Form as arm_raisings_forward_ui
 import sys
@@ -153,7 +153,7 @@ class arm_raisings_to_the_sides_widget(QtWidgets.QWidget):
 
     def on_start_clicked(self):
         # _translate = QtCore.QCoreApplication.translate
-        res = start_test("all_probes/artts-RandomForest-best_parameters-different_speed") # artts-classifier_RandomForest-98-different_speed
+        res = start_test("all_probes/aartts-different_speed-n_estimators=29_81.5-percentages") # artts-classifier_RandomForest-98-different_speed
         print(self.lang)
         if res:
             self.ui.result.setStyleSheet('QLabel {color: #1f4f16; }')
@@ -182,7 +182,7 @@ class arm_raisings_forward_widget(QtWidgets.QWidget):
     def on_start_clicked(self):
         #_translate = QtCore.QCoreApplication.translate
         #self.ui.result.setText(_translate(start_test("all_probes/arf-classifier_KNeighbors-4")))
-        res = start_test("all_probes/arf-SVC-best_parameters") #arf-classifier_SVC
+        res = start_test("all_probes/arf-different_speed-n_estimators=18_87.5-percentages") #arf-classifier_SVC
         print(self.lang)
         if res:
             self.ui.result.setStyleSheet('QLabel {color: #1f4f16; }')
@@ -205,7 +205,7 @@ if __name__ == '__main__':
     # print("tets")
     app = QtWidgets.QApplication([])
     app.aboutToQuit.connect(destroy)
-    #init()
+    init()
     mw = MainWindow()
     # mw.show()
 

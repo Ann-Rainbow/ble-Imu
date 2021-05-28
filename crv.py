@@ -13,14 +13,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import cross_val_score
 
 
-rawData = open(f'all_probes/artts-different_speed.csv')  # тренировочные данные
+rawData = open(f'all_probes/artts-a_little_complemented.csv')  # тренировочные данные
 dataset = np.genfromtxt(rawData, delimiter=",")
 
-for k in range(1,101):
+for k in range(1,50):
 #
 #
-    #clf = RandomForestClassifier(n_estimators=k, criterion="gini", max_depth=100 ) #
-    clf = DecisionTreeClassifier(max_depth=103, criterion="gini", min_samples_leaf = k) # random_state=k, max_features = 6
+    clf = RandomForestClassifier(n_estimators=k, criterion="gini", max_depth=100 ) #
+    #clf = DecisionTreeClassifier(max_depth=103, criterion="gini", min_samples_leaf = k) # random_state=k, max_features = 6
 #       #clf = KNeighborsClassifier(n_neighbors=k)
 #       n_classes = k
 #       clf = GaussianNB(priors=n_classes)

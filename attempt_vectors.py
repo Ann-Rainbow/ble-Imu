@@ -34,7 +34,7 @@ def median_filter (x, k):
 # probe1_folder = Path(r"C:\Users\Acer A315\Desktop\EDUCATION\1. Diploma\1. Sketches\_Server_\4. ArduinoPythonSrv-master - Modified\1_probe")
 vectors = []
 
-for i in range(0, 119):
+for i in range(0, 125): # 0-119 - подъем руки в сторону; 200-319 - подъем руки вперед
     with open(f'all_probes/{i}_probe/accelx_data.txt', 'r') as f:
         ax = np.array([float(x) for x in f.read().split('\n')[:-1]])
     with open(f'all_probes/{i}_probe/accely_data.txt', 'r') as f:
@@ -92,7 +92,7 @@ for i in range(0, 119):
 
 #print(vectors)
 
-csvfile = open(f'all_probes/artts-different_speed.csv', 'w', newline='\n')
+csvfile = open(f'all_probes/artts-a_little_complemented.csv', 'w', newline='\n')
 spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 for i in range(len(vectors)): # закомментировала, чтобы разделить и сохранить обучающую и тестовую выборку в два файла csv
 # for i in range[0, 119](len(vectors)): # пыталась
